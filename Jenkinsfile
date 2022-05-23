@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Clone code') {
             steps {
-                git branch: 'main', url: 'https://github.com/polipix/Backend.git'
+                git branch: 'master', url: 'https://github.com/polipix/Backend.git'
             }
         }
         stage('Do unit tests') {
